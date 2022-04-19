@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 2% auto;
+    width: 80%;
+}
+
+/* ROW */
+.row {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.product {
+    display: inline-block;
+    position: relative;  /* Prossima volta meglio mettere la position al product image, cosicche sicuro stia sopra l'immagine*/
+    width: calc((100%/3) - 16px);
+    margin: 6px;
+}
+
+.product img {
+    width: 100%;
+}
+
+/* INFO SOTTO IMMAGINE */
+.price {
+    font-weight: bold;
+    color: red;
+    font-size: small;
+}
+
+.old-price {
+    font-size: small;
+    text-decoration: line-through;
+}
+
+/* INFO SU IMMAGINE */
+.special {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+}
+
+.details {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+    padding: 4px 5px;
+}
+
+.sost {
+    background-color: #00875a;
+}
+
+.sale {
+    background-color: #eb0037;
+}
+
+.heart {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: white;
+    padding: 5px 15px;
+    font-size: xx-large;
+}
+
+
+/* HOVER EFFECT */
+.img-2 {
+    display: none;
+}
+
+.product:hover .img-1 {
+    display: none;
+}
+
+.product:hover .img-2 {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.heart:hover {
+    color: red;
+    cursor: pointer;
+}
